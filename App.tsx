@@ -14,17 +14,38 @@ interface VoiceAgent {
 }
 
 const AGENTS_FEMALE: VoiceAgent[] = [
-  { id: 'f1', name: VoiceName.Kore, label: 'Karin', desc: 'Sekretaris Profesional', icon: '👩‍💼', baseInstruction: 'Bicara dengan nada profesional, jelas, dan sangat sopan seperti asisten kantor.' },
-  { id: 'f2', name: VoiceName.Kore, label: 'Sari', desc: 'Ramah & Keibuan', icon: '👩', baseInstruction: 'Bicara dengan nada yang sangat lembut, penuh kasih sayang, dan menenangkan.' },
-  { id: 'f3', name: VoiceName.Kore, label: 'Putri', desc: 'Tegas & Berwibawa', icon: '👩‍🏫', baseInstruction: 'Bicara dengan nada tegas, sedikit cepat, dan otoriter seperti seorang guru atau instruktur.' },
-  { id: 'f4', name: VoiceName.Kore, label: 'Maya', desc: 'Ceria & Energik', icon: '👧', baseInstruction: 'Bicara dengan nada yang sangat bersemangat, ceria, dan penuh energi.' },
+  { id: 'f1', name: VoiceName.Kore, label: 'Sari', desc: 'Lembut & Menenangkan', icon: '🍃', baseInstruction: 'Bicara dengan nada sangat lembut, tenang, pelan, dan sangat menyejukkan hati.' },
+  { id: 'f2', name: VoiceName.Kore, label: 'Maya', desc: 'Ceria & Energik', icon: '✨', baseInstruction: 'Bicara dengan nada tinggi, penuh semangat, cepat, dan sangat ceria.' },
+  { id: 'f3', name: VoiceName.Kore, label: 'Karin', desc: 'Tegas & Profesional', icon: '💼', baseInstruction: 'Bicara dengan artikulasi jelas, nada serius, berwibawa, dan sangat profesional.' },
+  { id: 'f4', name: VoiceName.Puck, label: 'Putri', desc: 'Muda & Fresh', icon: '👒', baseInstruction: 'Bicara dengan suara remaja perempuan yang segar, santai, dan modern.' },
+  { id: 'f5', name: VoiceName.Kore, label: 'Nia', desc: 'Ringan & Natural', icon: '🌸', baseInstruction: 'Bicara dengan gaya bicara sehari-hari yang sangat alami, ringan, dan tidak dibuat-buat.' },
+  { id: 'f6', name: VoiceName.Kore, label: 'Amel', desc: 'Santai & Friendly', icon: '🤝', baseInstruction: 'Bicara seperti sedang mengobrol santai dengan teman akrab, sangat ramah.' },
+  { id: 'f7', name: VoiceName.Kore, label: 'Citra', desc: 'Cerah & Optimis', icon: '☀️', baseInstruction: 'Bicara dengan nada positif, penuh harapan, cerah, dan menginspirasi.' },
+  { id: 'f8', name: VoiceName.Kore, label: 'Desi', desc: 'Santai & Relaks', icon: '☕', baseInstruction: 'Bicara dengan tempo lambat, santai, seolah sedang bersantai di sore hari.' },
+  { id: 'f9', name: VoiceName.Kore, label: 'Elena', desc: 'Halus & Elegant', icon: '💎', baseInstruction: 'Bicara dengan gaya bahasa yang tertata, halus, anggun, dan berkelas.' },
+  { id: 'f10', name: VoiceName.Kore, label: 'Gita', desc: 'Jelas & Articulate', icon: '🎤', baseInstruction: 'Bicara dengan penekanan pada setiap kata, sangat jelas, mudah dimengerti, dan presisi.' },
+  { id: 'f11', name: VoiceName.Puck, label: 'Hana', desc: 'Ceria & Bubbly', icon: '🫧', baseInstruction: 'Bicara dengan suara yang menggemaskan, penuh tawa, dan sangat ceria.' },
+  { id: 'f12', name: VoiceName.Kore, label: 'Indah', desc: 'Lembut & Warm', icon: '🕯️', baseInstruction: 'Bicara dengan suara yang hangat, penuh perhatian, dan memberikan rasa nyaman.' },
+  { id: 'f13', name: VoiceName.Kore, label: 'Julia', desc: 'Lincah & Dynamic', icon: '💃', baseInstruction: 'Bicara dengan intonasi yang naik turun secara dinamis, lincah, dan tidak membosankan.' },
+  { id: 'f14', name: VoiceName.Kore, label: 'Keisha', desc: 'Hangat & Welcoming', icon: '🏠', baseInstruction: 'Bicara seperti sedang menyambut tamu dengan tangan terbuka, sangat hangat.' },
+  { id: 'f15', name: VoiceName.Kore, label: 'Laras', desc: 'Matang & Dalam', icon: '🎻', baseInstruction: 'Bicara dengan suara perempuan dewasa yang matang, bijak, dan memiliki kedalaman nada.' },
+  { id: 'f16', name: VoiceName.Kore, label: 'Monica', desc: 'Jelas & Distinct', icon: '📢', baseInstruction: 'Bicara dengan suara yang lantang, setiap suku kata terdengar sangat terpisah dan jelas.' },
+  { id: 'f17', name: VoiceName.Kore, label: 'Nova', desc: 'Berdesah & Unique', icon: '🌬️', baseInstruction: 'Bicara dengan banyak hembusan napas (breathy voice), artistik, dan sangat unik.' },
 ];
 
 const AGENTS_MALE: VoiceAgent[] = [
-  { id: 'm1', name: VoiceName.Zephyr, label: 'Zaki', desc: 'Asisten Modern', icon: '👨‍💻', baseInstruction: 'Bicara dengan gaya asisten AI yang cerdas, modern, dan informatif.' },
-  { id: 'm2', name: VoiceName.Puck, label: 'Rian', desc: 'Remaja Gaul', icon: '👦', baseInstruction: 'Bicara dengan gaya santai, sedikit cepat, dan energik seperti anak muda.' },
-  { id: 'm3', name: VoiceName.Fenrir, label: 'Budi', desc: 'Narator Berwibawa', icon: '🧔', baseInstruction: 'Bicara dengan suara berat, lambat, dan sangat dramatis seperti narator film dokumenter.' },
-  { id: 'm4', name: VoiceName.Charon, label: 'Eyang', desc: 'Tua & Bijaksana', icon: '👴', baseInstruction: 'Bicara dengan nada orang tua yang lambat, bergetar sedikit, dan penuh kebijaksanaan.' },
+  { id: 'm1', name: VoiceName.Zephyr, label: 'Andi', desc: 'Ceria & Playful', icon: '🎮', baseInstruction: 'Bicara dengan nada yang menyenangkan, suka bercanda, dan sangat santai.' },
+  { id: 'm2', name: VoiceName.Zephyr, label: 'Bagas', desc: 'Informatif & Clear', icon: '📊', baseInstruction: 'Bicara seperti pembawa berita, sangat informatif, jelas, dan lugas.' },
+  { id: 'm3', name: VoiceName.Zephyr, label: 'Candra', desc: 'Bersemangat & Energic', icon: '🔥', baseInstruction: 'Bicara dengan penuh gairah, energi tinggi, dan sangat memotivasi.' },
+  { id: 'm4', name: VoiceName.Fenrir, label: 'Doni', desc: 'Tegas & Authoritative', icon: '🏛️', baseInstruction: 'Bicara dengan suara berat, berwibawa, sangat tegas, dan memerintah.' },
+  { id: 'm5', name: VoiceName.Zephyr, label: 'Elang', desc: 'Jelas & Precise', icon: '🎯', baseInstruction: 'Bicara dengan sangat teliti, fokus pada kejelasan setiap detail kata.' },
+  { id: 'm6', name: VoiceName.Charon, label: 'Fajar', desc: 'Halus & Smooth', icon: '🌊', baseInstruction: 'Bicara dengan suara yang mengalir halus seperti sutra, sangat tenang.' },
+  { id: 'm7', name: VoiceName.Fenrir, label: 'Galih', desc: 'Tegas & Strong', icon: '🏋️', baseInstruction: 'Bicara dengan suara yang kuat, bertenaga, maskulin, dan sangat kokoh.' },
+  { id: 'm8', name: VoiceName.Charon, label: 'Hadi', desc: 'Berpengalaman & Wise', icon: '📜', baseInstruction: 'Bicara dengan nada orang tua yang bijak, penuh pengalaman, dan tenang.' },
+  { id: 'm9', name: VoiceName.Zephyr, label: 'Indra', desc: 'Informatif & Jelas', icon: '📖', baseInstruction: 'Bicara dengan gaya menjelaskan yang mudah dipahami, jernih, dan informatif.' },
+  { id: 'm10', name: VoiceName.Zephyr, label: 'Jaka', desc: 'Ramah & Hangat', icon: '🏡', baseInstruction: 'Bicara dengan nada tetangga yang ramah, hangat, dan sangat terbuka.' },
+  { id: 'm11', name: VoiceName.Zephyr, label: 'Krisna', desc: 'Seimbang & Balanced', icon: '⚖️', baseInstruction: 'Bicara dengan nada yang netral, stabil, dan memiliki keseimbangan intonasi yang baik.' },
+  { id: 'm12', name: VoiceName.Fenrir, label: 'Leo', desc: 'Santai & Deep', icon: '🎷', baseInstruction: 'Bicara dengan suara yang sangat rendah (bass), santai, dan memiliki resonansi dalam.' },
 ];
 
 const App: React.FC = () => {
@@ -211,7 +232,7 @@ const App: React.FC = () => {
               </svg>
             </div>
             <div>
-              <h1 className="text-lg font-bold text-slate-900 leading-none">Gemini TTS Studio</h1>
+              <h1 className="text-lg font-bold text-slate-900 leading-none">Magic Voice : Text To Speech</h1>
               <p className="text-[10px] text-slate-400 font-bold uppercase tracking-[0.2em] mt-1">Advanced Vocal Engine</p>
             </div>
           </div>
@@ -267,34 +288,34 @@ const App: React.FC = () => {
                       onClick={() => { setActiveGender('female'); setSelectedAgent(AGENTS_FEMALE[0]); }}
                       className={`px-4 py-1.5 rounded-lg text-xs font-bold transition-all ${activeGender === 'female' ? 'bg-white text-indigo-600 shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}
                     >
-                      Perempuan
+                      Perempuan ({AGENTS_FEMALE.length})
                     </button>
                     <button 
                       onClick={() => { setActiveGender('male'); setSelectedAgent(AGENTS_MALE[0]); }}
                       className={`px-4 py-1.5 rounded-lg text-xs font-bold transition-all ${activeGender === 'male' ? 'bg-white text-indigo-600 shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}
                     >
-                      Laki-laki
+                      Laki-laki ({AGENTS_MALE.length})
                     </button>
                   </div>
                 </div>
 
-                <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 max-h-[400px] overflow-y-auto pr-2 custom-scrollbar p-1">
                   {(activeGender === 'female' ? AGENTS_FEMALE : AGENTS_MALE).map((agent) => (
                     <button
                       key={agent.id}
                       onClick={() => setSelectedAgent(agent)}
-                      className={`relative flex flex-col items-center p-5 rounded-3xl border-2 transition-all duration-300 ${
+                      className={`relative flex flex-col items-center p-4 rounded-2xl border-2 transition-all duration-300 ${
                         selectedAgent.id === agent.id 
-                          ? 'bg-indigo-50/50 border-indigo-500 shadow-lg shadow-indigo-100' 
+                          ? 'bg-indigo-50/50 border-indigo-500 shadow-md shadow-indigo-100' 
                           : 'bg-white border-slate-100 hover:border-slate-300 hover:bg-slate-50'
                       }`}
                     >
-                      <span className="text-3xl mb-3 drop-shadow-sm">{agent.icon}</span>
-                      <span className={`text-sm font-black tracking-tight ${selectedAgent.id === agent.id ? 'text-indigo-700' : 'text-slate-700'}`}>{agent.label}</span>
-                      <span className="text-[10px] text-slate-400 font-bold mt-1 text-center leading-tight uppercase tracking-tighter">{agent.desc}</span>
+                      <span className="text-2xl mb-2 drop-shadow-sm">{agent.icon}</span>
+                      <span className={`text-xs font-black tracking-tight text-center ${selectedAgent.id === agent.id ? 'text-indigo-700' : 'text-slate-700'}`}>{agent.label}</span>
+                      <span className="text-[9px] text-slate-400 font-bold mt-1 text-center leading-tight uppercase tracking-tighter line-clamp-1">{agent.desc}</span>
                       {selectedAgent.id === agent.id && (
-                        <div className="absolute top-3 right-3">
-                          <div className="w-2 h-2 rounded-full bg-indigo-500 shadow-[0_0_8px_rgba(99,102,241,0.8)]"></div>
+                        <div className="absolute top-2 right-2">
+                          <div className="w-1.5 h-1.5 rounded-full bg-indigo-500 shadow-[0_0_8px_rgba(99,102,241,0.8)]"></div>
                         </div>
                       )}
                     </button>
