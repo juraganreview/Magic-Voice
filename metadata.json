@@ -1,0 +1,7 @@
+{
+  "name": "Gemini TTS Studio",
+  "description": "A professional-grade Text-to-Speech tool powered by Gemini 2.5 Flash, featuring voice customization, dialogue generation, and advanced audio controls.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
